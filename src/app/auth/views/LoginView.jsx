@@ -85,7 +85,6 @@ export const LoginView = () => {
                 label="Usuario"
                 type="text"
                 name="usuario"
-                sx={{color:'white'}}
                 {...register("usuario", {
                   required: "El correo electrónico es requerido, por favor ingrese su correo",
                   validate: (value) =>
@@ -93,7 +92,7 @@ export const LoginView = () => {
                 })}
                 startAdornment={
                   <InputAdornment position="start">
-                    <Mail sx={{color:'white'}}/>
+                    <Mail />
                   </InputAdornment>
                 }
               />
@@ -111,13 +110,12 @@ export const LoginView = () => {
                 label="Contraseña"
                 type="password"
                 name="password"
-                sx={{color:'white'}}
                 {...register("password", {
                   required: "La contraseña es requerida, por favor ingrese su contraseña",
                 })}
                 startAdornment={
                   <InputAdornment position="start">
-                    <Password sx={{color:'white'}}/>
+                    <Password />
                   </InputAdornment>
                 }
               />

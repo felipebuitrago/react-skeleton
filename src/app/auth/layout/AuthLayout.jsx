@@ -21,8 +21,8 @@ export const AuthLayout = ({ children, title = '' }) => {
        xs={ 3 }
        sx={{ 
             width: { sm: 450 },
-            backgroundColor:'grey',
             padding: 3, 
+            border: '1px solid black',
             borderRadius: 2 ,
         }}>
           <Typography align='center' 
